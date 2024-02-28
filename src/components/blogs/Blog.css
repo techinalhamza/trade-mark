@@ -1,0 +1,31 @@
+.blog-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.blog-card:hover .blog-info {
+  top: 40%;
+}
+.blog-card:hover {
+  background: #93c0db;
+}
+.blog-info {
+  transition: 0.5s ease;
+}
+.blog-card {
+  background-image: linear-gradient(
+    360deg,
+    hsl(0deg 0% 52%) 0%,
+    hsl(344deg 0% 51%) 21%,
+    hsl(344deg 0% 49%) 33%,
+    hsl(344deg 0% 47%) 40%,
+    hsl(344deg 0% 45%) 44%,
+    hsl(344deg 0% 44%) 48%,
+    hsl(0deg 0% 42%) 51%,
+    hsl(344deg 0% 51%) 54%,
+    hsl(344deg 0% 60%) 58%,
+    hsl(344deg 0% 70%) 64%,
+    hsl(344deg 0% 80%) 72%,
+    hsl(344deg 0% 90%) 84%,
+    hsl(0deg 0% 100%) 100%
+  );
+}

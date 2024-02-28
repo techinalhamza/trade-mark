@@ -133,3 +133,61 @@ export const brandData = [
     brandimg: brand12,
   },
 ];
+// ======================================================================================
+// brands data end
+//  ======================================================================================
+// ======================================================================================
+// featureProduct data start
+//  ======================================================================================
+import featureImg1 from "./assets/feature-product1.jpg";
+import featureImg2 from "./assets/feature-product2.jpg";
+import featureImg3 from "./assets/feature-product3.jpg";
+import featureImg4 from "./assets/feature-product4.jpg";
+import featureImg5 from "./assets/feature-product5.jpg";
+export const featureProductData = [
+  {
+    img: featureImg1,
+    title:
+      "Emtek SELECT Door Handle, Square Rosette, Mix & Match Handle Style & Finish",
+    price: "224.00",
+    productType: "per set",
+    colors: [
+      { color: "#F4DFAE" },
+      { color: "#403D36" },
+      { color: "#F9F2E8" },
+      { color: "##D7D2CE" },
+      { color: "#00000C" },
+      { color: "#E5C043" },
+    ],
+  },
+  {
+    img: featureImg2,
+    title: `Schaub Avalon Bay, Cabinet Pull, Choice of Finishes`,
+    price: "168.80",
+    productType: "per item",
+    colors: [{ color: "#699298" }, { color: "#6A9399" }],
+  },
+  {
+    img: featureImg3,
+    title: "Barzen #5351 Automatic Door Bottom, Regular Duty Soundproofing,",
+    price: "44.99",
+    productType: "per item",
+    colors: [{ color: "#CCCCCC" }, { color: "#504147" }],
+  },
+  {
+    img: featureImg4,
+    title:
+      "TMH Magnetic Kerf Weatherstripping Set,  for Metal Doors, 84' x 36' - Quick Ship",
+    price: "39.59",
+    productType: "per item",
+    colors: [{ color: "#00000C" }, { color: "#fff" }],
+  },
+  {
+    img: featureImg5,
+    title:
+      "Yale Expressions 72' Barn Door Hardware Kit with Soft Open and Close, Flat Track",
+    price: "204.00",
+    productType: "per set",
+    colors: [{ color: "#62615F" }, { color: "#C3C6CE" }],
+  },
+];

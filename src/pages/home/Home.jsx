@@ -6,6 +6,8 @@ import { boxData } from "../../data";
 import HomeBoxes from "./HomeBoxes";
 import Brands from "../../components/brands/Brands";
 import FeatureProduct from "../../components/feature-product/FeatureProduct";
+import Banner from "../../components/banner/Banner";
+import Blogs from "../../components/blogs/Blogs";
 
 function Home() {
   return (
@@ -16,6 +18,8 @@ function Home() {
           <HomeBoxes />
           <Brands />
           <FeatureProduct />
+          <Banner />
+          <Blogs />
         </div>
       </div>
     </>

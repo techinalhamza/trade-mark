@@ -1,0 +1,45 @@
+.color-box .box {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid;
+  /* background: #000; */
+}
+.product-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.info .ratting {
+  font-size: 1px;
+  width: 1px;
+}
+label.css-dqr9h-MuiRating-label {
+  /* width: 24px; */
+  font-size: 17px;
+}
+
+.info button {
+  background: #2781b8;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.6rem 2rem;
+}
+.info button:hover {
+  background: #ffc62a;
+  color: #000000;
+}
+.info .buttons svg {
+  font-size: 1.5rem;
+  color: #615f5f;
+}
+.info .buttons .box {
+  background: #f1f3f7;
+  padding: 0.4rem;
+  transition: 0.4s ease;
+}
+.info .buttons .box:hover {
+  background: #ffc62a;
+}
