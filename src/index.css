@@ -17,3 +17,14 @@ body {
   padding-left: 10%;
   padding-right: 10%;
 }
+.container-fluid2 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.hd {
+  font-size: 28px;
+  font-weight: 900;
+  color: rgb(39, 129, 184);
+  /* border-bottom: 4px solid rgb(39, 129, 184); */
+  padding-bottom: 1rem;
+}

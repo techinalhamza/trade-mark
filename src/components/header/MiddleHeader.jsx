@@ -27,7 +27,7 @@ function MiddleHeader() {
                 <IoIosSearch />
               </div>
             </div>
-            <div className="col-4 flex gap-3">
+            <div className="col-4 flex justify-end gap-3 ml-auto">
               <div className="box ">
                 <FaRegUser />
                 <h2>account</h2>

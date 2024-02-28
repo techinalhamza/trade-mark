@@ -1,0 +1,20 @@
+.box-item .info button {
+  background: #ffcd44;
+  color: #000;
+  text-transform: capitalize;
+  padding: 0.5rem 2rem;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.box-item .info {
+  transition: 0.5s ease-in-out;
+}
+.box-item:hover .info {
+  top: 0%;
+  background: #6c99b3a6;
+}
+.box-container .box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 15px;
+}
