@@ -11,8 +11,12 @@
   font-family: "Open Sans";
 }
 body {
+  position: relative;
+  overflow-x: hidden;
 }
-
+html {
+  overflow-x: hidden;
+}
 .container-fluid {
   padding-left: 10%;
   padding-right: 10%;
@@ -27,4 +31,14 @@ body {
   color: rgb(39, 129, 184);
   /* border-bottom: 4px solid rgb(39, 129, 184); */
   padding-bottom: 1rem;
+}
+img {
+  /* max-width: max-content; */
+}
+
+@media (max-width: 998px) {
+  .container-fluid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

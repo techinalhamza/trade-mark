@@ -4,7 +4,7 @@ import banner from "../../assets/banner.jpg";
 function Banner() {
   return (
     <>
-      <div className="banner-container">
+      <div className="banner-container ">
         <div
           className="containe  bg-black"
           style={{

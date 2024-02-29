@@ -16,12 +16,12 @@ function Brands() {
             </div>
           </div>
           {brand === 0 && (
-            <div className="brand-box mt-8">
+            <div className="brand-box mt-8 ">
               {customerData.map((val) => {
                 return (
                   <>
-                    <div className="img">
-                      <img src={val.custimg} alt="" />
+                    <div className="img hover:scal overflow-hidden hover:shadow-2xl ">
+                      <img src={val.custimg} alt="" className="w-[7rem]" />
                     </div>
                   </>
                 );
@@ -34,7 +34,7 @@ function Brands() {
                 return (
                   <>
                     <div className="img">
-                      <img src={val.brandimg} alt="" />
+                      <img src={val.brandimg} alt="" className="w-[7rem]" />
                     </div>
                   </>
                 );

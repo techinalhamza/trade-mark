@@ -1,3 +1,24 @@
+// ======================================================================================
+// DROPDOWN data start
+//  ======================================================================================
+export const dropdownItems = [
+  "Door Weatherstripping & Door Seals",
+  "Door Thresholds, Ramps & Stair Hardware",
+  "Door Hardware",
+  "Door Hardware",
+  "Hinges",
+  "Sliding Doors & Sliding Cabinet Doors",
+  "Flood Barriers & Door Dam",
+  "Cabinet Hardware",
+  "LED Lights",
+  "Bathroom Accessories",
+  "Emtek Door Hardware",
+  "SHOP BY BRAND",
+];
+
+// ======================================================================================
+// boxes data start
+//  ======================================================================================
 import boximg1 from "./assets/box1.jpg";
 import boximg2 from "./assets/box2.jpg";
 import boximg3 from "./assets/box3.jpg";
@@ -5,9 +26,6 @@ import boximg4 from "./assets/box4.jpg";
 import boximg5 from "./assets/box5.jpg";
 import boximg6 from "./assets/box6.jpg";
 
-// ======================================================================================
-// boxes data start
-//  ======================================================================================
 export const boxData = [
   {
     title: "door bottoms",
@@ -144,9 +162,16 @@ import featureImg2 from "./assets/feature-product2.jpg";
 import featureImg3 from "./assets/feature-product3.jpg";
 import featureImg4 from "./assets/feature-product4.jpg";
 import featureImg5 from "./assets/feature-product5.jpg";
+import hoverImg1 from "./assets/feature-product-hover1.jpg";
+import hoverImg2 from "./assets/feature-product-hover2.jpg";
+import hoverImg3 from "./assets/feature-product-hover3.jpg";
+import hoverImg4 from "./assets/feature-product-hover4.jpg";
+import hoverImg5 from "./assets/feature-product-hover5.jpg";
+
 export const featureProductData = [
   {
-    img: featureImg1,
+    defaultImg: featureImg1,
+    hoveredImg: hoverImg1,
     title:
       "Emtek SELECT Door Handle, Square Rosette, Mix & Match Handle Style & Finish",
     price: "224.00",
@@ -161,21 +186,24 @@ export const featureProductData = [
     ],
   },
   {
-    img: featureImg2,
-    title: `Schaub Avalon Bay, Cabinet Pull, Choice of Finishes`,
+    defaultImg: featureImg2,
+    hoveredImg: hoverImg2,
+    title: `Schaub Avalon Bay, Cabinet Pull, Choice of Finishes  Cabinet Pull, Choice of Finishes`,
     price: "168.80",
     productType: "per item",
     colors: [{ color: "#699298" }, { color: "#6A9399" }],
   },
   {
-    img: featureImg3,
+    defaultImg: featureImg3,
+    hoveredImg: hoverImg3,
     title: "Barzen #5351 Automatic Door Bottom, Regular Duty Soundproofing,",
     price: "44.99",
     productType: "per item",
     colors: [{ color: "#CCCCCC" }, { color: "#504147" }],
   },
   {
-    img: featureImg4,
+    defaultImg: featureImg4,
+    hoveredImg: hoverImg4,
     title:
       "TMH Magnetic Kerf Weatherstripping Set,  for Metal Doors, 84' x 36' - Quick Ship",
     price: "39.59",
@@ -183,7 +211,8 @@ export const featureProductData = [
     colors: [{ color: "#00000C" }, { color: "#fff" }],
   },
   {
-    img: featureImg5,
+    defaultImg: featureImg5,
+    hoveredImg: hoverImg5,
     title:
       "Yale Expressions 72' Barn Door Hardware Kit with Soft Open and Close, Flat Track",
     price: "204.00",

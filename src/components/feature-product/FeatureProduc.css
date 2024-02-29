@@ -9,7 +9,12 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
-
+.product-card:hover .img img {
+  scale: 1.1;
+}
+.product-card .img img {
+  transition: all 4s ease;
+}
 .info .ratting {
   font-size: 1px;
   width: 1px;

@@ -1,0 +1,22 @@
+.footer-container .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.footer-container .footer-content .footer-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.7rem;
+  font-size: 14px;
+  color: #27a3dd;
+}
+.footer-container .footer-content ul li svg {
+  font-size: 1rem;
+  color: #3b3a3a;
+}
+.footer-container .footer-content .footer-card h3 {
+  font-weight: bold;
+}
+.footer-card {
+  margin: auto;
+}

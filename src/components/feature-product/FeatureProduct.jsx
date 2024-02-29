@@ -1,37 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from "../../assets/feature-product1.jpg";
 import { Button, Rating } from "@mui/material";
 import "./FeatureProduc.css";
 import { featureProductData } from "../../data";
 import { FaChartBar } from "react-icons/fa";
-
 import { FaRegBookmark } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+
 function FeatureProduct() {
-  // const colors = [
-  //   "#F4DFAE",
-  //   "#403D36",
-  //   "#F9F2E8",
-  //   "#D7D2CE",
-  //   "#00000C",
-  //   "#E5C043",
-  // ];
-  console.log(featureProductData.colors);
+  const [hoveredImages, setHoveredImages] = useState(
+    Array(featureProductData.length).fill(false)
+  );
+  console.log(hoveredImages);
+  const handleMouseEnter = (index) => {
+    const updatedHoveredImages = [...hoveredImages];
+    updatedHoveredImages[index] = true;
+    setHoveredImages(updatedHoveredImages);
+  };
+  const handleMouseLeave = (index) => {
+    const updatedHoveredImages = [...hoveredImages];
+    updatedHoveredImages[index] = false;
+    setHoveredImages(updatedHoveredImages);
+  };
   return (
     <>
-      <div className="feature-product-container  ">
+      <div className="feature-product-container h-max overflow-hidden  ">
         <div className="container-fluid">
           <div className="hd">FEATURED PRODUCTS</div>
-          <div className="product-box h-[35rem] ">
+          <div className="product-box h-max mb-6 ">
             {featureProductData.map((val, index) => {
               return (
                 <>
                   <div
-                    className="product-card overflow-hidden   transition-all h-[28rem] hover:h-[33rem] hover:scale-105
+                    className="product-card overflow-hidden   transition-all h-[rem] hover:h-[rem] hoverscale-105
                    border px-4 py-8 hover:shadow-2xl"
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={() => handleMouseLeave(index)}
                   >
                     <div className="img">
-                      <img src={val.img} alt="" />
+                      <img
+                        src={
+                          hoveredImages[index] ? val.hoveredImg : val.defaultImg
+                        }
+                        alt=""
+                        className="transition- transition-opacity"
+                      />
                     </div>
                     <div className="info flex flex-col   gap-2">
                       <Rating defaultValue={4} className="ratting" />
@@ -54,7 +66,7 @@ function FeatureProduct() {
                           ></div>
                         ))}
                       </div>
-                      <div className="buttons flex items-center justify-between  ">
+                      <div className="buttons flex items-center justify-between mt-12 ">
                         <Button>full details</Button>
                         <div className="compare box">
                           <FaChartBar />

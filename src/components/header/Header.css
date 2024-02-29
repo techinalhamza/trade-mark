@@ -16,8 +16,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90px;
-  height: 80px;
+  /* width: 100px;
+  height: 80px; */
+  padding: 12px;
   background: #f1f3f7;
 }
 .middle-container .box:hover {
@@ -29,6 +30,13 @@
 }
 
 /* ===================== css for navbar ========================== */
+.nav-container.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  /* background: #c21d1d; */
+  width: 100%;
+}
 .nav-container .links span {
   color: #888080;
 }
@@ -88,3 +96,67 @@
   color: #2781b8;
   font-size: 14px;
 } */
+/* -----------------------code for header responsive------------------------------ */
+.middle-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1080px) {
+  .top-header-container {
+    display: none;
+  }
+  .middle-container .search-bar {
+    display: none;
+  }
+  .middle-container .logo img {
+    width: 10rem;
+  }
+  .middle-container .box h2 {
+    display: none;
+  }
+}
+@media (max-width: 990px) {
+  .middle-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .nav-container {
+    position: relative;
+  }
+  .nav-container .links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background: #ffffff;
+    color: #000000;
+    z-index: 1111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15rem;
+    transition: 0.5s ease;
+  }
+  .nav-container .links.active {
+    left: 0;
+  }
+  .nav-container .links span {
+    display: none;
+  }
+  .nav-container .links button {
+    color: #000000;
+    /* width: 100%; */
+    border: none;
+  }
+  .middle-container .row .col-2 {
+    max-width: 30%;
+    flex: 0 0 20%;
+  }
+  .middle-container .row .col-6 {
+    max-width: 30%;
+    flex: 0 0 20%;
+  }
+  .middle-container .row .col-4 {
+    max-width: 30%;
+    flex: 0 0 20%;
+  }
+}

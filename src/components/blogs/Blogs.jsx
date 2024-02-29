@@ -20,8 +20,8 @@ function Blogs() {
   ];
   return (
     <>
-      <div className="blog-container my-12">
-        <div className="container-fluid">
+      <div className="blog-container my-12 ">
+        <div className="container-fluid ">
           <div className="blog-box ">
             {blogData.map((val) => {
               return (
